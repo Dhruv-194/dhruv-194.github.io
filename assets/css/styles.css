@@ -3,14 +3,29 @@
   text-align: center;
 }
 
+
 /* JUMBOTRON STYLE HERE */
-.jumbotron{
-background-color: #21D4FD;
-background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-background-repeat: no-repeat;
-background-attachment: fixed;
-color:white !important;
-height:100vh;
+.jumbotron {
+  position: relative;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  z-index: 1;
+}
+
+.jumbotron::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image:  radial-gradient( circle farthest-corner at 10% 20%,  rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.jumbotron:hover::before {
+  opacity: 1;
 }
 
 .btn-lg{
@@ -32,10 +47,4 @@ height:100vh;
   padding:9px 20px 9px 20px;
 }
 
-.card about-me{
-  border-radius: 96px;
-background: linear-gradient(145deg, #70c7cd, #85ecf4);
-box-shadow:  33px 33px 30px #3a686b, 
-             -33px -33px 30px #beffff;
-}
 

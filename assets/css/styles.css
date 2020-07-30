@@ -19,7 +19,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image:  radial-gradient( circle farthest-corner at 10% 20%,  rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+  background-image:  linear-gradient(225deg, #08AEEA 0%, #2AF598 64%);
   z-index: -1;
   transition: opacity 0.5s linear;
   opacity: 0;

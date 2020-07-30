@@ -1,7 +1,7 @@
 
 .about-me {
   text-align: center;
-border-radius: 96px;
+
 background: #94e477;
 box-shadow:  -33px 33px 30px #466b38, 
              33px -33px 30px #e2ffb6;
@@ -11,7 +11,7 @@ box-shadow:  -33px 33px 30px #466b38,
 .imagecard{
 text-align: center;
 
-background: #94e477;
+
 box-shadow:  -33px 33px 30px #466b38;
 }
 
@@ -23,13 +23,12 @@ box-shadow:  33px 33px 30px #466b38;
 
 .games{
 border-radius: 96px;
-background: #94e477;
+
 box-shadow:  33px 33px 30px #466b38; 
 }
 
 .prog{
 border-radius: 96px;
-background: #94e477;
 box-shadow:  33px 33px 30px #466b38; 
 }
 

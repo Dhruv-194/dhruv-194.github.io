@@ -86,3 +86,8 @@ background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-2
 background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.pro1{
+  border-radius: 63px;
+background: #f1fbc1;
+box-shadow:  -29px -29px 28px #74785d;
+}

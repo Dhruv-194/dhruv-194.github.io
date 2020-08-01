@@ -15,7 +15,8 @@
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-   
+      <script src="https://unpkg.com/scrollreveal"></script>
+       <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <!-- ----------------------------------- -->
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="https://use.fontawesome.com/6b457f6f16.js"></script>
@@ -57,7 +58,7 @@
         <section id ="Home"> 
           <div class="jumbotron text-center" >
           <h1 class="title display-4 text-center pt-3 mb-5 mt-5" style="font-weight:600;"> Hi! I am Dhruv Mehta </h1>
-            <p class="lead mb-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p class="lead mb-5 wow">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <hr class="my-4 mt-5"/>
                 <a class="btn btn-lg mb-5 mt-5" href="https://github.com/Dhruv-194" role="button">Lets GO!</a>
           </div>
@@ -132,7 +133,7 @@
                  <section id="Projects" class="project">
                    <div class="container">
             <h2> These are my projects </h2>
-                        <p class="lead mb-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p class="lead mb-5 wowe">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             
             
             <div class="card-deck mb-4 ">
@@ -179,7 +180,7 @@
         <section id="Achievements" class="achievement"> 
           <div class="container">
          <h2> These are my achievements </h2>
-                        <p  class="lead mb-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p  class="lead mb-5 wowe">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
           
           
             <div id="achievementsCarousel" class="carousel slide" data-ride="carousel">
@@ -302,6 +303,90 @@
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/729074/t/5"></script>
         </footer>
         <!-- Footer -->
+
+<!--on smooth-scroll javascript code--> 
+
+<script>
+        window.sr = ScrollReveal();
+      
+        sr.reveal('.wow', {
+          duration: 2000,
+          origin:'top',
+          distance:'300px'
+        });
+   
+     sr.reveal('.wowe', {
+          duration: 2000,
+          origin:'top',
+          distance:'100px',
+       viewFactor: 0.2
+        });
+   
+      sr.reveal('.pro1', {
+          duration: 2000,
+          origin:'bottom',
+          distance:'300px',
+         viewFactor: 0.2
+        });
+   
+   
+       sr.reveal('.showcase-btn', {
+          duration: 2000,
+          delay: 2000,
+          origin:'bottom'
+        });
+      
+   sr.reveal('.about-me', {
+          duration: 2000,
+          origin:'top',
+          distance:'300px',
+         viewFactor: 0.2
+        });
+   
+          sr.reveal('.sports', {
+          duration: 2000,
+          origin:'right',
+          distance:'300px',
+          viewFactor: 0.2
+        });
+         sr.reveal('.games', {
+          duration: 2000,
+          origin:'right',
+          distance:'300px',
+          viewFactor: 0.2
+        });
+         sr.reveal('.prog', {
+          duration: 2000,
+          origin:'right',
+          distance:'300px',
+          viewFactor: 0.2
+        });
+   
+           sr.reveal('.imagecard', {
+          duration: 2000,
+          origin:'left',
+          distance:'300px'
+        });
+          </script>
+          
+              <script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+<!--on smooth-scroll javascript code-->
 
     </body>
 </html>

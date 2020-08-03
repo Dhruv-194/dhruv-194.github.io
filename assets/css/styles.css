@@ -101,14 +101,14 @@ box-shadow:  -29px -29px 28px #74785d;
 }
 
 .sendm{
-   border-color: white;
+   border-color: black;
   color:green;
   background-color:transparent;
 }
 
 .sendm:hover{
   border-color: transparent;
-  color:black;
-  background-color:blue;
+  color:white;
+  background-color:greenyellow;
   padding:9px 20px 9px 20px
 }

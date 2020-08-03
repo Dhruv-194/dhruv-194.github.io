@@ -99,3 +99,16 @@ box-shadow:  -29px -29px 28px #74785d;
 .card-footer{
   text-align: center;
 }
+
+.sendm{
+   border-color: white;
+  color:green;
+  background-color:transparent;
+}
+
+.sendm:hover{
+  border-color: transparent;
+  color:black;
+  background-color:blue;
+  padding:9px 20px 9px 20px
+}
